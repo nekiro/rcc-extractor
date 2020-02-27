@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RCCExtractor", "RCCExtractor\RCCExtractor.csproj", "{239D0F49-995F-4056-9D10-57A3BC9C488C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239D0F49-995F-4056-9D10-57A3BC9C488C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239D0F49-995F-4056-9D10-57A3BC9C488C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239D0F49-995F-4056-9D10-57A3BC9C488C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239D0F49-995F-4056-9D10-57A3BC9C488C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24D81BDC-00F0-41E8-85FD-19B4CBE83128}
+	EndGlobalSection
+EndGlobal

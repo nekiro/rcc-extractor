@@ -1,0 +1,36 @@
+﻿<Window x:Class="RCCExtractor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RCCExtractor"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Nekiro's RCC Extractor" Height="350" Width="500" MinHeight="350" MinWidth="500">
+    <Grid Margin="20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox IsReadOnly="True" IsReadOnlyCaretVisible="False" x:Name="PathBox" Grid.Column="0" Height="40" Margin="10, 0" materialDesign:HintAssist.Hint="Path" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+            <Button x:Name="BrowseButton" Grid.Column="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Content="{materialDesign:PackIcon DotsHorizontal}" Width="40" Height="40" Click="HandleClick" />
+        </Grid>
+        <Button Grid.Row="1" x:Name="ExtractButton" Style="{StaticResource MaterialDesignRaisedButton}" Width="100" Click="HandleClick">
+            Extract
+        </Button>
+        <TextBox x:Name="ConsoleLog" Grid.Row="2" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
